@@ -1,23 +1,18 @@
-public class CT {
-
-	public static void main(String[] args) {
-		// tạo ra hai sản phẩm (hardcode)
-		SanPham sp1 = new SanPham();
-		SanPham sp2 = new SanPham(2, "bánh chuối", "đồ an nhanh", "nc.jpg");
-		sp1.setMaSP(1);
-		sp1.setTenSP("BiaSG");
-		sp1.setLoaiSP("Đồ uống có cồn");
-		sp1.setAnhSP("sg.png");
-		
-		//In ra màn hình 2 sản phẩm
-		String thongtinSP1 = sp1.toString();
-		String thongtinSP2 = "Ma san pham 2 la " + sp2.getMaSP();
-		       thongtinSP2 += "Tên SP2 la " + sp2.getTenSP();
-		       
-		System.out.print(thongtinSP1);
-		System.out.print(thongtinSP2);
-		
-
+public class SanPham{
+	// Dinh nghia cac thuoc tinh
+	int maSP;
+	String tenSP;
+	String loaiSP;
+	String anhSP; // ten file anh
+	// Ham tao
+	public SanPham() {
+		// khoi tao gia tri ban dau cho cac thuoc tinh neu co o day
 	}
-
+	 public SanPham(int maSP, String _tenSP, String _ loaiSP, String _ anhSP) {
+		 // khoi tao gia tri ban dau cho cac thuoc tinh neu co o day
+		 maSP = _maSP;
+		 tenSP = _ tenSP;
+		 loaiSP = _loaiSP;
+		 anhSP = _ anhSP;
+	 }
 }
